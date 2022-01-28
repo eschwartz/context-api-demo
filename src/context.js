@@ -18,7 +18,7 @@ export function GlobalProvider({ children }) {
         const data = { title };
         const res = await axios.post('/api/todos', data);
         console.log('res', res)
-        fetchTodos();
+        await fetchTodos();
     }
 
     // There are all the values that will be made available
