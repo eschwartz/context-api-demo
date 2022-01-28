@@ -9,14 +9,14 @@ function AddItem() {
         evt.preventDefault();
 
         createTodo(todo);
-        
+
         setTodo('');
     }
 
     return (
         <>
             <form onSubmit={onAddTodo}>
-                <label>Add Todo</label>
+                <h2>Add Todo</h2>
                 <input
                     value={todo}
                     onChange={e => setTodo(e.target.value)}

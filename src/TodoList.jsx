@@ -5,11 +5,12 @@ function TodoList() {
     const { todos, fetchTodos } = useContext(GlobalContext);
 
     useEffect(() => {
-      fetchTodos();
+        fetchTodos();
     }, [])
 
     return (
         <>
+            <h2>Todo List</h2>
             <ul>
                 {todos.map((todoItem, i) => (
                     <li key={i}>{todoItem.title}</li>

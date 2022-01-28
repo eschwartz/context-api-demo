@@ -5,7 +5,11 @@ import TodoList from './TodoList';
 function App() {
 
   return (
-    <div>
+    <div style={{
+      width: 800,
+      margin: '30px auto'
+    }}>
+      <h1>ReactContext API Demo</h1>
       <AddTodo />
       <TodoList />
     </div>
