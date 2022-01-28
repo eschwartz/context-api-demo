@@ -1,5 +1,7 @@
 
+import AddGame from './AddGame';
 import AddTodo from './AddTodo';
+import GameList from './GameList';
 import TodoList from './TodoList';
 
 function App() {
@@ -10,8 +12,13 @@ function App() {
       margin: '30px auto'
     }}>
       <h1>ReactContext API Demo</h1>
-      <AddTodo />
       <TodoList />
+      <AddTodo />
+
+      <hr />
+
+      <GameList />
+      <AddGame />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { GlobalContext } from "./context";
 
-function AddItem() {
+function AddTodo() {
     const [todo, setTodo] = useState('');
     const {
         todos: { createTodo }
@@ -18,7 +18,7 @@ function AddItem() {
     return (
         <>
             <form onSubmit={onAddTodo}>
-                <h2>Add Todo</h2>
+                <h3>Add Todo</h3>
                 <input
                     value={todo}
                     onChange={e => setTodo(e.target.value)}
@@ -29,4 +29,4 @@ function AddItem() {
     )
 }
 
-export default AddItem;
+export default AddTodo;

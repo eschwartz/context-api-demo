@@ -13,8 +13,8 @@ export default function useTodos() {
 
     const createTodo = async (title) => {
         const data = { title };
-        const res = await axios.post('/api/todos', data);
-        console.log('res', res)
+        await axios.post('/api/todos', data);
+
         await fetchTodos();
     }
 

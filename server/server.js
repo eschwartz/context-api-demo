@@ -34,10 +34,10 @@ app.get('/api/games', (req, res) => {
 })
 
 app.post('/api/games', (req, res) => {
-    const games = req.body;
-    games.id = todos.length + 1;
-    games.completed = false;
-    games.push(games);
+    const game = req.body;
+    game.id = todos.length + 1;
+    game.completed = false;
+    games.push(game);
     res.sendStatus(201);
 })
 
