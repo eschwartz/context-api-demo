@@ -2,9 +2,7 @@ import { useContext, useEffect } from "react";
 import { GlobalContext } from "./context";
 
 function GameList() {
-    const {
-        games: { fetchGames, games }
-    } = useContext(GlobalContext);
+    const { fetchGames, games } = useContext(GlobalContext);
 
     useEffect(() => {
         fetchGames();

@@ -10,8 +10,8 @@ export function GlobalProvider({ children }) {
     // There are all the values that will be made available
     // from `useContext(GlobalContext)`
     const state = {
-        todos: useTodos(),
-        games: useGames(),
+        ...useTodos(),
+        ...useGames(),
     }
 
     // Log state changes, similar to redux-logger

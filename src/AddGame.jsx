@@ -3,9 +3,7 @@ import { GlobalContext } from "./context";
 
 function AddGame() {
     const [game, setGame] = useState('');
-    const {
-        games: { createGame }
-    } = useContext(GlobalContext);
+    const { createGame } = useContext(GlobalContext);
 
     const onAddGame = (evt) => {
         evt.preventDefault();

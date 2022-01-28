@@ -2,9 +2,7 @@ import { useContext, useEffect } from "react";
 import { GlobalContext } from "./context";
 
 function TodoList() {
-    const {
-        todos: { fetchTodos, todos }
-    } = useContext(GlobalContext);
+    const { fetchTodos, todos } = useContext(GlobalContext);
 
     useEffect(() => {
         fetchTodos();

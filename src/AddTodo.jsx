@@ -3,9 +3,7 @@ import { GlobalContext } from "./context";
 
 function AddTodo() {
     const [todo, setTodo] = useState('');
-    const {
-        todos: { createTodo }
-    } = useContext(GlobalContext);
+    const { createTodo } = useContext(GlobalContext);
 
     const onAddTodo = (evt) => {
         evt.preventDefault();
